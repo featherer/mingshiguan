@@ -1,0 +1,121 @@
+/* slider poistion */
+.slider {
+    margin: 0 auto;
+}
+/* tab */
+#project-single-tab .active a {
+    color: white;
+    background-color: #7abe9f;
+}
+/* section */
+.project-single {
+    margin-right: 105px;
+}
+.project-single-sidebar {
+    top: 0;
+    right: 0;
+    width: 90px;
+    height: 400px;
+}
+.project-single-img > a > img {
+    width: 560px;
+    height: 400px;
+}
+.project-single-info {
+    padding-bottom: 20px;
+}
+.project-single-info > h3 {
+    margin-bottom: 8px;
+    font-family: 'youyuan', 'yahei';
+    font-size: 24px;
+}
+.project-single-card {
+    height: 400px;
+    margin-left: 560px;
+}
+.project-single-card .text {
+    padding: 30px;
+}
+.project-single-percentage .project-percentage {
+    margin-top: 7px;
+    margin-left: 68px;
+}
+.project-single .project-schedule {
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+}
+.project-single-text-wrap {
+    height: 100px;
+    padding-bottom: 15px;
+}
+.project-single .project-schedule > dl {
+    padding: 0 30px 30px;
+}
+.project-single .project-schedule-wrap dd {
+    line-height: 30px;
+}
+.project-sidebar-lace-up, .project-sidebar-down {
+    height: 20px;
+}
+.project-sidebar-lace-up {
+    overflow: hidden;
+}
+.project-sidebar-lace-up > div, .project-sidebar-lace-down > div {
+    height: 2px;
+}
+.project-sidebar-lace-up > div {
+    margin-top: 11px;
+}
+.project-sidebar-lace-down > div {
+    margin-top: 7px;
+}
+.project-single-type a {
+    line-height: 40px;
+}
+.project-single-type .triangle-left {
+    top: 0;
+    left: -20px;
+    border-width: 20px 10px;
+}
+.find-more {
+    width: 225px;
+    margin-top: 30px;
+}
+.find-more > a {
+    width: 100%;
+    line-height: 70px;
+}
+.login .login-item > input {
+    width: 270px;
+    padding: 0 0 0 17px;
+    height: 44px;
+}
+.login-input-icon {
+    width: 44px;
+    height: 44px;
+    text-indent: 999em;
+    background-color: #f0f0f0;
+}
+.login .login-password {
+    margin-top: 15px;
+}
+.login-opt {
+    padding: 20px 0;
+}
+.login-opt > p {
+    line-height: 1.5;
+}
+.login-opt > input {
+    vertical-align: -2px;
+}
+.login-opt em > a {
+    color: #7abe9f;
+}
+.login .btn {
+    width: 100%;
+    padding: 0;
+    font-size: 20px;
+    line-height: 44px;
+    background-color: #7abe9f;
+}

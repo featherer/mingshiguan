@@ -1,0 +1,78 @@
+.cropFrame {
+    position : relative;
+    display: inline-block;
+    overflow : hidden;
+}
+
+.cropImage {
+    position : absolute;
+    top      : 0;
+    left     : 0;
+    max-width: none;
+    cursor   : move;
+}
+
+.cropControls {
+    position   : absolute;
+    bottom     : 0;
+    left       : 0;
+    z-index    : 100;
+    width      : 100%;
+    height     : 26px;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    background : #000;
+    filter     : alpha(opacity=0);
+    opacity    : 0;
+    -webkit-transition : opacity .25s linear;
+       -moz-transition    : opacity .25s linear;
+            transition : opacity .25s linear;
+
+    t-touch-callout: none;
+    -khtml-user-select: none;
+}
+
+.cropFrame.hover .cropControls {
+    filter     : alpha(opacity=55);
+    opacity    : .55;
+}
+
+.cropControls span {
+    display   : block;
+    float     : left;
+    margin    : 7px 0 0 5px;
+    font-size : 11px;
+    color     : #fff;
+}
+
+.cropZoomIn, .cropZoomOut {
+    display         : block;
+    float           : right;
+    width           : 18px;
+    height          : 18px;
+    padding         : 0;
+    margin          : 4px 4px 0 0;
+    font-size       : 18px;
+    line-height     : 16px;
+    color           : #000;
+    text-align      : center;
+    text-decoration : none;
+    cursor          : pointer;
+    /* IE SUCKS */
+    zoom            : expression(this.runtimeStyle.zoom = "1", this.appendChild( document.createElement("b") ).className = "after")\9;
+    background      : #fff;
+    border: 1px solid #000;
+    border-radius   : 4px;
+}
+
+.cropZoomIn::after, .cropZoomIn .after {
+    display : block;
+    content : '+';
+}
+
+.cropZoomOut::after, .cropZoomOut .after {
+    display        : block;
+    content        : '-';
+}

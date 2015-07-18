@@ -1,0 +1,98 @@
+.nav {
+    height: 480px;
+}
+.nav-link {
+    width: 50px;
+    height: 40px;
+    margin-top: 10px;
+    transition: height .4s, width .4s, background-color .4s .4s;
+}
+.nav-icon-outer {
+    width: 30px;
+    padding: 5px 0;
+    margin: 9px 0;
+    margin-left: 16px;
+    cursor: pointer;
+    border-color: white;
+    border-style: solid;
+    border-top-width: 4px;
+    border-bottom-width: 4px;
+    transition: border-color 0 .4s;
+}
+.nav-icon-inner {
+    height: 4px;
+    background-color: white;
+    transition: background-color 0 .4s;
+}
+.nav-link.active {
+    width: 200px;
+    height: 240px;
+    padding-bottom: 20px;
+    background-color: white;
+    transition: height .4s, width .4s, background-color 0 0;
+}
+.nav-link.active .nav-list {
+    height: 200px;
+}
+.nav-link.active .nav-icon-inner {
+    background-color: #7abe9f;
+    transition: background-color 0 0;
+}
+.nav-link.active .nav-icon-outer {
+    border-color: #7abe9f;
+    transition: border-color 0 0;
+}
+.person-nav-link a {
+    width: auto;
+    margin-left: 60px;
+    line-height: 40px;
+}
+.odd {
+    background-color: #fcfcfc;
+}
+.person-option {
+    margin-top: 30px;
+    font-weight: 700;
+}
+.page .round {
+    background-color: white;
+}
+.person-info {
+    width: 250px;
+    margin: 100px auto 0;
+}
+.person-info .user {
+    width: 100px;
+    height: 100px;
+}
+.person-info .round-icon-wrap {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 100px;
+}
+.person-info .round-icon-wrap .round {
+    width: 184px;
+    height: 184px;
+    margin: 8px;
+    line-height: 184px;
+    background-color: #cecebf;
+    border-radius: 92px;
+}
+.main-nav {
+    bottom: -38px;
+    left: 50%;
+    margin-left: -330px;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+}
+.main-nav > li {
+    width: 220px;
+}
+.main-nav > li > a {
+    margin: 0 50px;
+    line-height: 72px;
+}
+.main-nav .active > a {
+    border-bottom: #7abe9f solid 4px;
+}

@@ -1,0 +1,90 @@
+{
+    "count": 4,
+    "next": null,
+    "previous": null,
+    "results": [
+        {
+            "id": 9,
+            "project": 2,
+            "user": 1,
+            "email": "admin@admin.com",
+            "content": "评论内容",
+            "datetime": "2014-07-28T08:22:00Z",
+            "parent": null,
+            "children": []
+        },
+        {
+            "id": 10,
+            "project": 2,
+            "user": 1,
+            "email": "admin@admin.com",
+            "content": "评论内容",
+            "datetime": "2014-07-28T08:43:12Z",
+            "parent": null,
+            "children": [
+                {
+                    "id": 11,
+                    "project": 2,
+                    "user": null,
+                    "email": null,
+                    "content": "修改评论",
+                    "datetime": "2014-07-28T08:55:35Z",
+                    "parent": 10,
+                    "children": [
+                        {
+                            "id": 13,
+                            "project": 2,
+                            "user": 1,
+                            "email": "admin@admin.com",
+                            "content": "评论内容",
+                            "datetime": "2014-07-28T08:43:25Z",
+                            "parent": 11,
+                            "children": []
+                        },
+                        {
+                            "id": 14,
+                            "project": 2,
+                            "user": 1,
+                            "email": "admin@admin.com",
+                            "content": "评论内容",
+                            "datetime": "2014-07-28T08:43:27Z",
+                            "parent": 11,
+                            "children": [
+                                {
+                                    "id": 15,
+                                    "project": 2,
+                                    "user": 1,
+                                    "email": "admin@admin.com",
+                                    "content": "评论内容",
+                                    "datetime": "2014-07-28T08:43:33Z",
+                                    "parent": 14,
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 12,
+            "project": 2,
+            "user": 1,
+            "email": "admin@admin.com",
+            "content": "评论内容",
+            "datetime": "2014-07-28T08:43:18Z",
+            "parent": null,
+            "children": []
+        },
+        {
+            "id": 16,
+            "project": 2,
+            "user": 1,
+            "email": "admin@admin.com",
+            "content": "评论内容",
+            "datetime": "2014-07-28T08:45:31Z",
+            "parent": null,
+            "children": []
+        }
+    ]
+}

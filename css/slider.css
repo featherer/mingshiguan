@@ -1,0 +1,56 @@
+.slider-wrap, .slider-img-list {
+    position: relative;
+}
+.slider-indicator, .slider-controller-left, .slider-controll-right {
+    position: absolute;
+}
+.slider-img-list {
+    margin: 0 50px;
+}
+.slider-img-list > ul {
+    position: relative;
+    overflow: hidden;
+}
+.slider-img-wrap > a {
+    display: block;
+}
+.slider-img-wrap > a > img {
+    vertical-align: bottom;
+}
+.slider-controller-left, .slider-controller-right {
+    position: absolute;
+    top: 50%;
+    width: 26px;
+    height: 64px;
+    margin-top: -32px;
+    cursor: pointer;
+}
+.slider-controller-left {
+    left: 0;
+}
+.slider-controller-right {
+    right: 0;
+}
+.slider-indicator {
+    bottom: 25px;
+    left: 50%;
+}
+.slider-indicator > ul {
+    overflow: hidden;
+}
+.slider-indicator-wrap {
+    float: left;
+    margin: 0 6px;
+}
+.slider-indicator-wrap > span {
+    display: block;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 5px;
+    opacity: .6;
+}
+.slider-indicator .js-index {
+    opacity: 1;
+}

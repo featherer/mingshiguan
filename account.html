@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>明食馆</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/module.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/slider.css">
+	<link rel="stylesheet" href="css/account.css">
+	<script src="js/lib/require.js"></script>
+	<script>
+	require(['./js/common'], function (common) {
+		require(['app/account']);
+	})
+	</script>
+</head>
+<body>
+	<header class="header center white alert clear relative active">
+		<div class="header-notify auto">
+			<p>这里是各种弹出通知</p>
+		</div>
+		<span class="absolute close" data-dismiss="alert">×</span>
+	</header>
+	<nav class="nav bg-green-light clear">
+		<div class="nav-wrap auto">
+			<div class="logo left bg-yellow"></div>
+			<div class="search right">
+				<form action="" class="left">
+					<div class="field clear mr-12">	
+						<span class="search-icon left block"></span>
+						<input class="input-search left block" type="text" placeholder="请输入您要搜索的内容"/>
+					</div>
+				</form>
+				<div class="user left"></div>
+			</div>
+			<ul class="normal nav-link clear center">
+				<li class="left"><a class="active block white" href="#">首页</a></li>
+				<li class="left"><a class="block white" href="#">众筹项目</a></li>
+				<li class="left"><a class="block white" href="#">问答讨论</a></li>
+				<li class="left"><a class="block white" href="#">新手帮助</a></li>
+				<li class="left"><a class="block white" href="#">发起项目</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div class="wrap pt-40 bg-grey info">
+		<div class="wrap-inner auto">
+			<div class="main pt-40 clear">
+				<div class="account-sidebar bg-white left">
+					<div class="round-icon">
+						<div class="round-icon-wrap">
+							<div class="round relative">
+								<div class="user absolute"></div>
+							</div>
+						</div>
+					</div>
+					<ul class="normal pb-20 clear center">
+						<li class="active"><a class="block title-small" href="#" data-toggle="tab" data-target="#brief">账户总览</a></li>
+						<li><a class="block title-small" href="#" data-toggle="tab" data-target="#question">我的问答</a></li>
+						<li><a class="block title-small" href="#" data-toggle="tab" data-target="#information">修改个人资料</a></li>
+						<li><a class="block title-small" href="#" data-toggle="tab" data-target="#password">修改密码</a></li>
+					</ul>
+				</div>
+				<div class="account-main tab-content">
+					<div id="brief" class="active" data-animate="fade">
+						<section class="title-small bg-white balance mb-20">
+							<div>
+								<div class="section-title-wrap relative mb-20">
+									<h2 class="relative">
+										账户余额
+										<span class="normal">2333333@qq.com</span>
+									</h2>
+								</div>
+								<div class="clear">
+									<span class="inline-block large green">$ 500, 000, 000</span>
+								</div>
+							</div>
+						</section>
+						<section class="title-small bg-white transaction mb-20">
+							<div>
+								<div class="section-title-wrap relative mb-20">
+									<h2 class="relative">交易明细</h2>
+								</div>
+								<table class="table">
+									<tr>
+										<th>项目名称</th>
+										<th>资金数额</th>
+										<th>时间</th>
+										<th>行为</th>
+									</tr>
+									<tr>
+										<td>1</td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+								</table>
+							</div>
+						</section>
+					</div>
+					<div id="question" data-animate="fade">
+						<ul class="normal clear center question-nav mb-10">
+							<li class="left mr-12 active"><a class="block title-small bg-white" href="#" data-toggle="tab" data-target="#myproblem">我的提问</a></li>
+							<li class="left mr-12"><a class="block title-small bg-white" href="#" data-toggle="tab" data-target="#myanswer">我的回答</a></li>
+							<li class="left"><a class="block title-small bg-white" href="#" data-toggle="tab" data-target="#myfocus">我的关注</a></li>
+						</ul>
+						<section class="title-small bg-white question mb-20 tab-content">
+							<div id="myproblem" data-animate="fade" class="active">
+								<div class="section-title-wrap relative mb-20">
+									<h2 class="relative">我的提问</h2>
+								</div>
+								<table class="table">
+									<tr>
+										<th>标题</th>
+										<th>时间</th>
+										<th>回复</th>
+										<th>状态</th>	
+									</tr>
+									<tr>
+										<td>1</td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+								</table>
+							</div>
+							<div id="myanswer" data-animate="fade">
+								<div class="section-title-wrap relative mb-20">
+									<h2 class="relative">我的回答</h2>
+								</div>
+								<table class="table">
+									<tr>
+										<th>标题</th>
+										<th>时间</th>
+										<th>回复</th>
+										<th>状态</th>	
+									</tr>
+									<tr>
+										<td>1</td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+								</table>
+							</div>
+							<div id="myfocus" data-animate="fade">
+								<div class="section-title-wrap relative mb-20">
+									<h2 class="relative">我的关注</h2>
+								</div>
+								<table class="table">
+									<tr>
+										<th>标题</th>
+										<th>时间</th>
+										<th>回复</th>
+										<th>状态</th>	
+									</tr>
+									<tr>
+										<td>1</td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+								</table>
+							</div>
+						</section>
+					</div>
+					<div id="information" data-animate="fade">
+						<section class="title-small bg-white information mb-20">
+								<div class="clear">
+									<form method="post" action="/api/accounts/user/" id="modifyInfo">
+										<div class="section-title-wrap relative mb-20">
+											<h2 class="relative">个人资料</h2>
+										</div>
+										<div>
+											<div class="basic-info-list mb-20 clear">
+												<label class="mr-12 green left" for="email">邮&nbsp;箱:</label><input type="text" id="email" name="email" class="input">
+											</div>
+											<div class="basic-info-list mb-20 clear">
+												<label class="mr-12 green left" for="phone">手机号:</label><input type="text" id="phone" name="mobile" class="input">
+											</div>
+											<div class="basic-info-list mb-20 clear">
+												<label class="mr-12 green left" for="nickname">昵&nbsp;称:</label><input type="text" id="nickname" name="nickname" class="input">
+											</div>
+											<div class="basic-info-list mb-20 clear">
+												<label class="mr-12 green left" for="qq">QQ:</label><input type="text" id="qq" name="qq" class="input">
+											</div>
+											<div class="basic-info-list mb-20 clear">
+												<label class="mr-12 green left" for="province">籍&nbsp;贯:</label>
+												<select name="province" id="province" class="select left">
+												</select>
+												<select name="native" id="city" class="select left"></select>
+											</div>
+											<div class="basic-info-list mb-20 clear">
+												<label class="mr-12 green left" for="occupation">职&nbsp;业:</label><input type="text" id="occupation" name="occupation" class="input">
+											</div>
+										</div>
+										<button type="submit" class="right btn bg-green-light white" id="information-modify" form="modifyInfo">确认修改</button>
+									</form>
+								</div>
+							</section>
+					</div>
+					<div id="password" data-animate="fade">
+						<section class="title-small bg-white password">
+							<div class="clear">
+								<div class="section-title-wrap relative mb-20">
+									<h2 class="relative">修改密码</h2>
+								</div>
+								<div>
+									<div class="basic-info-list mb-20 clear">
+										<label class="mr-12 green left" for="oldpassword">原密码:</label><input type="password" id="oldpassword" name="oldpassword" class="input valid" aria-required="true" aria-invalid="false">
+									</div>
+									<div class="basic-info-list mb-20 clear">
+										<label class="mr-12 green left" for="password">密&nbsp;码:</label><input type="password" id="password" name="password1" class="input valid" aria-required="true" aria-invalid="false">
+									</div>
+									<div class="basic-info-list mb-20 clear">
+										<label class="mr-12 green left" for="repassword">重复密码:</label><input type="password" id="repassword" name="password2" class="input valid" aria-required="true" aria-invalid="false">
+									</div>
+								</div>
+								<button type="submit" class="right btn bg-green-light white" id="password-modify">确认修改</button>
+							</div>
+						</section>
+					</div>
+				</div>				
+			</div>
+		</div>
+		<div class="toolbar hide">
+				<div class="clear relative white toolbar-icon-wrap">
+					<div class="relative share">
+					</div>
+					<span class="absolute">分享<br>我们</span>
+				</div>
+				<div class="clear relative white toolbar-icon-wrap">
+					<div class="relative download">
+					</div>
+					<span class="absolute">应用<br>下载</span>
+				</div>
+				<div class="clear relative white toolbar-icon-wrap">
+					<div class="relative feedback">
+					</div>
+					<span class="absolute">问题<br>反馈</span>
+				</div>
+				<div class="clear relative white toolbar-icon-wrap">
+					<div class="relative go-to-top">
+					</div>
+					<span class="absolute">返回<br>顶部</span>
+				</div>
+			</div>
+			<footer class="footer data">
+				<div class="footer-wrap auto">
+					<div class="footer-company clear">
+						<h2 class="normal">合作伙伴</h2>
+						<ul>
+							<li class="left mr-12"><a href="#">i黑马</a></li>
+							<li class="left mr-12"><a href="#">创业邦</a></li>
+							<li class="left mr-12"><a href="#">网易科技</a></li>
+							<li class="left mr-12"><a href="#">36Kr财新网</a></li>
+							<li class="left mr-12"><a href="#">浙江卫视</a></li>
+							<li class="left mr-12"><a href="#">上海壹周</a></li>
+							<li class="left mr-12"><a href="#">新浪网</a></li>
+							<li class="left mr-12"><a href="#">新民晚报</a></li>
+							<li class="left mr-12"><a href="#">扭秧歌杂志</a></li>
+							<li class="left mr-12"><a href="#">商界时尚</a></li>
+							<li class="left mr-12"><a href="#">人民网</a></li>  
+							<li class="left mr-12"><a href="#">人物杂志</a></li> 
+							<li class="left mr-12"><a href="#">南方日报</a></li>
+						</ul>
+					</div>
+					<div class="footer-help data clear">
+						<div class="footer-section left">
+							<h2 class="normal">关于</h2>
+							<ul>
+								<li><a href="#">了解追梦</a></li>
+								<li><a href="#">追梦历程</a></li>
+								<li><a href="#">友情链接</a></li>
+								<li><a href="#">联系我们</a></li>
+							</ul>
+						</div>
+						<div class="footer-section left">
+							<h2 class="normal">帮助</h2>
+							<ul>
+								<li><a href="#">建议反馈</a></li>
+								<li><a href="#">常见问题</a></li>
+							</ul>
+						</div>
+						<div class="footer-section left">				
+							<h2 class="normal">声明</h2>
+							<ul>
+								<li><a href="#">用户协议</a></li>
+								<li><a href="#">免责声明</a></li>
+								<li><a href="#">隐私版权声明</a></li>
+							</ul>
+						</div>
+						<div class="footer-section left">
+							<h2 class="normal">分类</h2>
+							<ul>
+								<li><a href="#">鲁菜/川菜/苏菜</a></li>
+								<li><a href="#">粤菜/闽菜/浙菜</a></li>
+								<li><a href="#">湘菜/徽菜/其他</a></li>
+							</ul>
+						</div>
+						<div class="footer-section center code left">
+							<img src="img/code.png" width="120" height="120" alt="">
+							<h2 class="normal">扫一扫加微信工作号</h2>
+						</div>
+					</div>
+				</div>
+				<div class="copyright white bg-green-light">
+					<div class="auto clear">
+						<div class="left">
+							<p>COPYRIGHT © 2011~2014 PPT STORE ALL RIGHTS RESERVED.<br>中国信息产业部备案　京ICP备11039233号-1</p>
+						</div>
+						<div class="right clear platform">
+							<div class="left relative">
+								<a href="#" class="block">
+									<div class="absolute sina"></div>
+								</a>
+							</div>
+							<div class="left relative">
+								<a href="#" class="block">
+									<div class="absolute qqzone"></div>
+								</a>
+							</div>
+							<div class="left relative douban-wrap">
+								<a href="#" class="block">
+									<div class="absolute douban"></div>
+								</a>
+							</div>
+							<div class="left relative">
+								<a href="#" class="block">
+									<div class="absolute renren"></div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+	</div>
+</body>
+</html>

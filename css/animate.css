@@ -1,0 +1,115 @@
+/* notify */
+.header {
+    margin-top: -45px;
+    background: #499674;
+    transition: margin-top 1s, background 1s;
+}
+.header.active {
+    background-color: #ff8080;
+    margin-top: 0;
+}
+/* nav */
+.nav-link > li > a:hover {
+    background-color: rgba(255, 255, 255, .1);
+}
+.field {
+    background-color: #7abe9f;
+    transition: background-color .6s;
+}
+.field.active {
+    background-color: white;
+}
+.active .input-search {
+    width: 160px;
+}
+.active .search-icon > svg {
+    fill: #b4b5b6;
+}
+.search-icon {
+    background-color: transparent;
+}
+.input-search {
+    width: 0;
+    background-color: transparent;
+    transition: width .6s;
+}
+/* toolbar */
+.toolbar-icon-wrap {
+    overflow: hidden;
+    transition: background .4s;
+    /*transition: margin-top .5s;*/
+}
+.toolbar-icon-wrap > div {
+    opacity: 1;
+    transition: opacity .4s .4s;
+    /*transition: top 0.5s;*/
+}
+.toolbar-icon-wrap > span {
+    top: -3px;
+    margin-top: -40px;
+    opacity: 0;
+    transition: opacity .4s, top .4s .4s, margin-top .4s .4s;
+    /*transition: top 0.5s;*/
+}
+.toolbar-icon-wrap:hover {
+    background-color: #7abe9f;
+    transition: background .4s;
+}
+.toolbar-icon-wrap:hover > span {
+    top: 50%;
+    margin-top: -20px;
+    color: white;
+    opacity: 1;
+    transition: opacity .4s .4s;
+}
+.toolbar-icon-wrap:hover > div {
+    opacity: 0;
+    transition: opacity .4s;
+    /*top: 100%;*/
+    /*margin-top: 0;*/
+}
+.toolbar .toolbar-icon-wrap.hide {
+    display: block;
+    height: 0;
+    opacity: 0;
+    transition: height .4s .6s, opacity .4s;
+}
+.toolbar .toolbar-icon-wrap {
+    height: 70px;
+    opacity: 1;
+    transition: height .4s, opacity .4s .6s;
+}
+
+.close:hover {
+    transform: rotate(180deg);
+}
+.close {
+    transition: transform .6s;
+}
+
+/* find more */
+.find-more:hover {
+    background-color: #7abe9f;
+    transition: background .4s;
+}
+.find-more:hover a {
+    color: white;
+    transition: color .4s;
+}
+
+/* login */
+.modal {
+    display: none;
+    transition: visibility .4s .4s;
+}
+.modal .modal-dialog {
+    transition: margin-top .4s;
+}
+.modal.active {
+    visibility: visible;
+    transition: visibility .4s;
+}
+.modal.active .modal-dialog {
+    margin-top: 100px;
+    transition: margin-top .4s;
+}

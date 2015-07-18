@@ -1,0 +1,29 @@
+.sign-panel-agreement p {
+    padding: 20px 0 10px;
+}
+
+#city {
+    width: 140px;
+}
+#province {
+    width: 120px;
+    margin-right: 20px;
+}
+#image {
+    display: none;
+}
+.sex {
+	line-height: 40px;
+}
+.imageWrap > img {
+	cursor: pointer;
+}
+.imageWrap > button {
+	display: none;
+	margin-bottom: 12px;
+	margin-left: 20px;
+}
+#imageId {
+	visibility: hidden;
+	position: absolute;
+}

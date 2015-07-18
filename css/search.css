@@ -1,0 +1,60 @@
+#change-location .close {
+    color: black;
+    top: 0;
+}
+.search-box > li {
+    margin-bottom: 10px;
+}
+.search-box > li > div {
+    padding-left: 36px;
+}
+.search-box a, .search-box span {
+    line-height: 40px;
+    cursor: pointer;
+}
+.diy {
+    margin-top: 1px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.page {
+    padding-top: 30px;
+    padding-bottom: 100px;
+}
+.project-wrap {
+    padding-bottom: 10px;
+}
+.page-wrap li {
+    margin-right: 5px;
+}
+.page-wrap .round {
+    background-color: white;
+}
+.page .current-page .round {
+    background-color: #7abe9f;
+}
+.change-location {
+    width: 500px;
+    right: 0;
+    top: -40px;
+    border-radius: 10px;
+}
+.change-location .header {
+    padding: 0;
+}
+.change-location .header > div {
+    color: #7abe9f;
+}
+.change-location .position > em {
+    width: 20px;
+    height: 20px;
+}
+.change-location .position svg {
+    fill: #7abe9f;
+}
+.change-location .content {
+    padding: 10px 20px;
+}
+.change-location .content a {
+    line-height: 1.5;
+}

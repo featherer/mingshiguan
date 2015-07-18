@@ -1,0 +1,119 @@
+.js-sign-header .active a {
+    color: #7abe9f;
+}
+.sign-panel-agreement p {
+    padding: 20px 0 10px;
+}
+.basic-info-list > select {
+    width: 120px;
+}
+#project-province {
+    margin-right: 40px;
+}
+#project-time {
+    width: 100px;
+}
+.basic-info-list ul {
+    font-size: 18px;
+}
+.project-type > li {
+    width: 21%;
+    margin-bottom: 10px;
+}
+.project-type input {
+    margin-right: 5px;
+}
+#project-img, #project-tag {
+    visibility: hidden;
+}
+.project-img-upload {
+    width: 70px;
+    height: 30px;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+.project-tag > li {
+    padding: 6px 0;
+}
+.project-tag > li > div {
+    padding: 0 22px 0 18px;
+    font-size: 14px;
+    line-height: 28px;
+    border-radius: 6px;
+}
+.project-tag-del {
+    top: 0;
+    right: 3px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.project-tag .project-tag-add > div {
+    padding: 0 18px 0 22px;
+    line-height: 26px;
+    cursor: pointer;
+    border: 1px dashed #7abe9f;
+}
+
+#sign label.error {
+    margin-left: 20px;
+    font-size: 14px;
+}
+.project-wrap {
+    width: 236px;
+    border: 1px solid #eee;
+}
+.project-wrap img {
+    width: 100%;
+}
+.panel label {
+    line-height: 40px;
+}
+.panel input[type=text] {
+    width: 270px;
+}
+.reward {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.reward-wrap > div {
+    width: 49%;
+}
+.reward-wrap .panel {
+    display: none;
+}
+.panel-body > div {
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+input[type=file] {
+    display: none;
+}
+.add-reward {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    border: 1px dashed #7abe9f;
+    margin: 0 auto;
+    font-size: 20px;
+    cursor: pointer;
+}
+.reward-payback-list input {
+    margin-right: 5px;
+}
+.image {
+    display: none;
+}
+.imageCancel {
+    display: none;
+}
+.imageId, .project {
+    position: absolute;
+    visibility: hidden;
+}
+.imagePreview img {
+    width: 320px;
+}
+#imageId {
+    visibility: hidden;
+    position: absolute;
+}

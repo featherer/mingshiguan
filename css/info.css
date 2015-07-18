@@ -1,0 +1,161 @@
+.info .wrap-inner {
+    padding-bottom: 70px;
+}
+.project-info-wrap {
+    width: 980px;
+    padding: 30px 0 20px;
+}
+.section-title-wrap span {
+    margin-top: 15px;
+    margin-left: 20px;
+}
+.project-info-wrap .section-title-wrap {
+    margin-bottom: 12px;
+}
+.project-info .right {
+    text-align: right;
+}
+.user-icon {
+    margin-left: 20px;
+}
+.round-icon.user-icon .round {
+    width: 100px;
+    height: 100px; line-height: 100px;
+}
+.user-info {
+    margin-top: 10px;
+}
+.project-info .user-info > h2 {
+    padding: 0; margin-bottom: 5px;
+}
+.info-type > ul > li {
+    margin-right: 20px;
+}
+.info-action {
+    background-color: #ddeadd;
+}
+.info-action dt {
+    margin-left: 30px; font-size: 40px;
+}
+.info-action dd {
+    margin-right: 40px;
+}
+.info-like, .info-keep {
+    width: 320px; line-height: 100px;
+}
+.info-function-wrap {
+    width: 980px;
+    padding-top: 70px;
+}
+.info-function-comment {
+    margin-right: 400px;
+}
+.info-function-fund {
+    width: 380px;
+}
+.info-function-fund .project-percentage {
+    height: 12px;
+    margin-right: 52px;
+    border-radius: 6px;
+}
+.info-function-fund .project-percentage > div {
+    height: 12px;
+    border-radius: 6px;
+}
+.info-function-fund-schedule {
+    padding-bottom: 18px;
+    border-bottom: 1px solid #f4f4f4;
+}
+.info-function-fund-schedule span {
+    margin-top: -4px;
+}
+.info-function-fund-schedule > p > em {
+    color: #ff7070;
+}
+.info-more {
+    padding-top: 18px;
+}
+.info-more > div {
+    width: 45%;
+    margin-bottom: 12px;
+}
+.info-more img {
+    width: 100%;
+}
+.info-function-supporter li {
+    margin-right: 20px;
+}
+.info-function-supporter-last {
+    width: 147px;
+    background-color: #f4f4f4;
+    border-radius: 35px;
+}
+.info-function-supporter-last span {
+    line-height: 64px;
+}
+.info-function-supporter .panel .close {
+    top: 15px;
+    right: 15px;
+    margin-top: 0;
+}
+.info-function-supporter .panel .select {
+    margin-top: 15px;
+    margin-left: 20px;
+    font-size: 20px;
+    background-color: white;
+}
+.info-function-supporter .panel .right {
+    margin-right: 30px;
+}
+.info-function-supporter .panel-header {
+    line-height: 70px;
+    font-size: 14px;
+}
+.info-function-supporter .panel-body {
+    font-size: 14px;
+    padding-bottom: 40px;
+}
+.info-function-supporter .panel-text {
+    padding: 5px 130px 0 70px;
+}
+.info-function-supporter .panel-body p {
+    margin-top: 10px;
+}
+.info-function-comment-list {
+    margin-top: 20px;
+    border-bottom: 1px solid #f4f4f4;
+}
+.comment-list {
+    border-top: 1px solid #f4f4f4;
+}
+.comment-list-wrap {
+    padding: 30px 0 30px 20px;
+}
+.comment-text {
+    margin-left: 85px;
+}
+.comment-form > textarea {
+    width: 360px;
+    border-width: 1px;
+    border-radius: 4px;
+}
+.comment-text dt {
+    color: #79be9f;
+}
+.comment-text dd {
+    margin-top: 5px;
+}
+.comment-time {
+    right: 0;
+    bottom: 20px;
+}
+.round .user {
+    width: 60px;
+    height: 60px;
+}
+.project-info .section-title-wrap {
+    border-bottom: none;
+}
+.project-info .section-title-wrap > h2 {
+    border-bottom: none;
+}

@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'YaHei';
+    font-style: normal;
+    font-weight: normal;
+
+    src: url('../font/YaHei.eot?#iefix') format('eot'),
+    url('../fonts/YaHei.woff') format('woff'),
+    url('../fonts/YaHei.ttf') format('truetype'),
+    url('../fonts/YaHei.svg#YaHei') format('svg');
+}

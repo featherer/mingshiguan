@@ -1,0 +1,71 @@
+.account-sidebar {
+    width: 200px;
+}
+.account-sidebar .active a , .question-nav .active a {
+    background-color: #7abe9f;
+    color: white;
+}
+.account-sidebar .round-icon-wrap {
+    width
+}
+.account-sidebar .round-icon-wrap .round {
+    height: 110px;
+    width: 110px;
+    line-height: 110px;
+    box-shadow: none;
+    border: 5px solid #eee;
+    background-color: #cecebf;
+}
+.account-sidebar .user {
+    width: 70px;
+    height: 70px;
+}
+.account-sidebar .round-icon {
+    width: 120px;
+    height: 120px;
+    margin: 40px;
+}
+.account-sidebar ul > li > a {
+    line-height: 50px;
+}
+.account-main {
+    margin-left: 220px;
+}
+.account-main section > div {
+    padding: 20px 30px 30px;
+}
+.account-main .section-title-wrap > h2 {
+    font-size: 20px;
+}
+.account-main .section-title-wrap {
+    border-width: 2px;
+}
+.account-main .section-title-wrap > h2 {
+    border-width: 2px;
+    top: 2px;
+}
+.balance .clear {
+    padding-left: 20px;
+    padding-bottom: 0;
+}
+.balance .clear > span {
+    margin-right: 60px;
+}
+#withdraw {
+    padding: 3px 18px;
+    margin-top: -10px;
+}
+.question-nav > li > a{
+    line-height: 50px;
+    width: 130px;
+}
+#province {
+    width: 120px;
+    margin-right: 20px;
+}
+#city {
+    width: 140px;
+}
+.basic-info-list > button {
+    margin-left: 20px;
+}

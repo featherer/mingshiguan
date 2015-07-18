@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>明食馆</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/module.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/forum.css">
+	<link rel="stylesheet" href="css/forumDetail.css">
+	<script src="js/lib/require.js"></script>
+	<script src="js/template.js"></script>
+	<script>
+	require(['./js/common'], function (common) {
+		require(['app/forumDetail']);
+	})
+	</script>
+</head>
+<body>
+	<header class="header center white alert clear relative active">
+		<div class="header-notify auto">
+			<p>这里是各种弹出通知</p>
+		</div>
+		<span class="absolute close" data-dismiss="alert">×</span>
+	</header>
+	<nav class="nav bg-green-light clear">
+		<div class="nav-wrap auto">
+			<div class="logo left"></div>
+			<div class="search right">
+				<form action="" class="left">
+					<div class="field clear mr-12">
+						<span class="search-icon left block"></span>
+						<input class="input-search left block" type="text" placeholder="请输入您要搜索的内容"/>
+					</div>
+				</form>
+				<div class="user left" data-toggle="modal" data-target="#loginmodal"></div>
+			</div>
+			<ul class="normal nav-link clear center">
+				<li class="left"><a class="active block white" href="#">首页</a></li>
+				<li class="left"><a class="block white" href="#">众筹项目</a></li>
+				<li class="left"><a class="block white" href="#">问答讨论</a></li>
+				<li class="left"><a class="block white" href="#">新手帮助</a></li>
+				<li class="left"><a class="block white" href="#">发起项目</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div class="wrap pt-40 bg-grey">
+		<div class="wrap-inner auto">
+			<div class="main clear">
+				<div class="forum-aside bg-white right">
+					<div class="text">
+						<div class="clear">
+							<div class="user-icon round-icon left mr-12">
+								<div class="round-icon-wrap">
+									<div class="round relative">
+										<div class="user absolute"></div>
+									</div>
+								</div>
+							</div>
+							<div class="user-info left">
+								<div class="clear title-large">
+									<h2 class="medium">FFF团长</h2>
+									<p class="title-small small">浙江,绍兴,人<br>产品经理</p>
+								</div>
+							</div>
+						</div>
+						<div class="forum-info mb-10">
+							<div class="section-title mb-26">
+								<div class="section-title-wrap relative title-large">
+									<h2 class="relative">Ta的新帖</h2>
+								</div>
+							</div>
+						</div>
+						<div class="relevant-topic mb-10">
+							<div class="section-title mb-26">
+								<div class="section-title-wrap relative title-large">
+									<h2 class="relative">相关话题</h2>
+								</div>
+							</div>
+							<div class="forum-info-list mb-10">
+								<ul>
+									<li class="mb-10"><a href="#">这里是版块信息这里是版块信息</a></li>
+									<li class="mb-10"><a href="#">这里是版块信息这里是版块信息</a></li>
+									<li class="mb-10"><a href="#">这里是版块信息这里是版块信息</a></li>
+									<li class="mb-10"><a href="#">这里是版块信息这里是版块信息</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="recom-topic mb-10">
+							<div class="section-title mb-26">
+								<div class="section-title-wrap relative title-large">
+									<h2 class="relative">推荐话题</h2>
+								</div>
+							</div>
+							<div class="forum-info-list mb-10">
+								<ul>
+									<li class="mb-10"><a href="#">这里是版块信息这里是版块信息</a></li>
+									<li class="mb-10"><a href="#">这里是版块信息这里是版块信息</a></li>
+									<li class="mb-10"><a href="#">这里是版块信息这里是版块信息</a></li>
+									<li class="mb-10"><a href="#">这里是版块信息这里是版块信息</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="forum-main">
+					<div class="forum-main-display bg-white mb-20">
+						<div class="forum-discuss-title mb-20"><p>问答讨论 &gt; 烧死那对异性恋</p></div>
+						<div class="main-content">
+							<h1 style="font-size:30px">伏牛堂：寻找647位“霸蛮”堂客</h1>
+							<p style="color:#d6d6d6">本帖最后由 ff团团长 于 2014-07-14 19:16 编辑 </p>
+							<h2 style="font-size:20px;margin-top:20px"> 溯源：常德米粉的来历</h2>
+							<img src="img/test1.jpg" alt="" style="display:block;margin:20px 0;width:600px">
+							<p style="margin-bottom:60px;">清朝雍正年间，相当一部分回族人因为战争缘故，从万里之外的新疆来到江南小城常德定居。当喜食面食又善于烹饪牛羊肉的回族人来到了素有江南粮仓的鱼米之乡，便发生了一连串奇妙的爆炸式化学反应：彼时的回民发现常德盛产大米，就用烹制牛肉面的手法来制作由大米制成的米粉。弹滑润韧的江南米粉遇上香醇软烂的西北牛肉，便形成了千古一绝的常德米粉。</p>
+						</div>
+						<div class="clear">
+							<ul class="left">
+								<li class="left mr-12"><a href="#" class="tag block">233</a></li>
+								<li class="left mr-12"><a href="#" class="tag block">23</a></li>
+								<li class="left mr-12"><a href="#" class="tag block">23333</a></li>
+							</ul>
+							<div class="right">
+								<button class="btn bg-green-light white mr-12" id="consent">赞同</button>
+								<button class="btn bg-green-light white" id="reply">回复</button>
+							</div>
+						</div>
+					</div>
+					<div class="forum-main-comment bg-white mb-20">
+						<h3 class="medium title-large mb-10">最近访客</h3>
+						<ul class="clear recent-visitor mb-20">
+							<li class="left">
+								<a href="#" class="block">
+									<div class="round-icon">
+										<div class="round-icon-wrap">
+											<div class="round"></div>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li class="left">
+								<a href="#" class="block">
+									<div class="round-icon">
+										<div class="round-icon-wrap">
+											<div class="round"></div>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li class="left">
+								<a href="#" class="block">
+									<div class="round-icon">
+										<div class="round-icon-wrap">
+											<div class="round"></div>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li class="left">
+								<a href="#" class="block">
+									<div class="round-icon">
+										<div class="round-icon-wrap">
+											<div class="round"></div>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li class="left">
+								<a href="#" class="block">
+									<div class="round-icon">
+										<div class="round-icon-wrap">
+											<div class="round"></div>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li class="left">
+								<a href="#" class="block">
+									<div class="round-icon">
+										<div class="round-icon-wrap">
+											<div class="round"></div>
+										</div>
+									</div>
+								</a>
+							</li>
+						</ul>
+						<div class="commentarea relative">
+							<ul class="comment even">
+								<li class="list clear">
+									<div class="left clear">
+										<div class="left round-icon">
+											<div class="round-icon-wrap">
+												<div class="round"></div>
+											</div>
+										</div>
+									</div>
+									<div class="right list-info title-small">
+										<p><a class="title-small comment-reply" href="#">回复</a></p>
+									</div>
+									<div class="list-main">
+										<div class="list-person"><p class="normal green mr-12 inline-block">fff团团长</p><span class="title-small">23天前</span></div>
+										<div class="list-comment inline-block">好隐晦，真棒。</div>
+									</div>
+									<ul class="comment odd">
+										<li class="list clear">
+											<div class="left">
+												<div class="left round-icon">
+													<div class="round-icon-wrap">
+														<div class="round"></div>
+													</div>
+												</div>
+											</div>
+											<div class="right list-info title-small">
+												
+												<p><a class="title-small comment-reply" href="#">回复</a></p>
+											</div>
+											<div class="list-main">
+												<div class="list-person"><p class="normal green mr-12 inline-block">fff团团长</p><span class="title-small">23天前</span></div>
+												<div class="list-comment inline-block">好隐晦，真棒。</div>
+											</div>
+											<ul class="comment even">
+												<li class="list clear">
+													<div class="left">
+														<div class="left round-icon">
+															<div class="round-icon-wrap">
+																<div class="round"></div>
+															</div>
+														</div>
+													</div>
+													<div class="right list-info title-small">
+														
+														<p><a class="title-small comment-reply" href="#">回复</a></p>
+													</div>
+													<div class="list-main">
+														<div class="list-person"><p class="normal green mr-12 inline-block">fff团团长</p><span class="title-small">23天前</span></div>
+														<div class="list-comment inline-block">好隐晦，真棒。</div>
+													</div>
+													<ul class="comment odd">
+														<li class="list clear">
+															<div class="left">
+																<div class="left round-icon">
+																	<div class="round-icon-wrap">
+																		<div class="round"></div>
+																	</div>
+																</div>
+															</div>
+															<div class="right list-info title-small">
+																
+																<p><a class="title-small comment-reply" href="#">回复</a></p>
+															</div>
+															<div class="list-main">
+																<div class="list-person"><p class="normal green mr-12 inline-block">fff团团长</p><span class="title-small">23天前</span></div>
+																<div class="list-comment inline-block">好隐晦，真棒。</div>
+															</div>
+														</li>
+													</ul>
+												</li>
+												<li class="list clear">
+													<div class="left">
+														<div class="left round-icon">
+															<div class="round-icon-wrap">
+																<div class="round"></div>
+															</div>
+														</div>
+													</div>
+													<div class="right list-info title-small">
+														
+														<p><a class="title-small comment-reply" href="#">回复</a></p>
+													</div>
+													<div class="list-main">
+														<div class="list-person"><p class="normal green mr-12 inline-block">fff团团长</p><span class="title-small">23天前</span></div>
+														<div class="list-comment inline-block">好隐晦，真棒。</div>
+													</div>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li class="list clear">
+									<div class="left">
+										<div class="left round-icon">
+											<div class="round-icon-wrap">
+												<div class="round"></div>
+											</div>
+										</div>
+									</div>
+									<div class="right list-info title-small">
+										<p><a class="title-small comment-reply" href="#">回复</a></p>
+									</div>
+									<div class="list-main">
+										<p class="normal">这是众筹啊众筹的问答讨论话题</p>
+									</div>
+								</li>
+							</ul>
+							<div class="page">
+								<div class="page-wrap">
+									<ul class="clear medium title-large">
+										<li class="prev left round-icon"><div class="round-icon-wrap"><a class="title-large round" href="#">&lt;</a></div></li>
+										<li class="the-first-page left round-icon"><div class="round-icon-wrap"><a class="title-large round" href="#">1...</a></div></li>
+										<li class="current-page left round-icon"><div class="round-icon-wrap"><a class="title-large round" href="#">1</a></div></li>
+										<li class="left round-icon"><div class="round-icon-wrap"><a class="title-large round" href="#">2</a></div></li>
+										<li class="left round-icon"><div class="round-icon-wrap"><a class="title-large round" href="#">3</a></div></li>
+										<li class="the-last-page left round-icon"><div class="round-icon-wrap"><a class="title-large round" href="#">...10</a></div></li>
+										<li class="next left round-icon"><div class="round-icon-wrap"><a class="title-large round" href="#">&gt;</a></div></li>
+									</ul>
+								</div>
+							</div>
+							<div class="hide comment-backdrop"></div>
+						</div>
+					</div>
+					<div class="forum-main-reply bg-white mb-20">
+						<div class="mb-20">
+							<div class="text">
+								<p class="inline-block mr-12">您需要登录后才能回复</p>
+								<span class="green mr-12" data-toggle="modal" data-target="#loginmoal">登录</span>
+								<a class="green" href="#">立刻注册</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="toolbar">
+			<div class="clear relative white toolbar-icon-wrap">
+				<div class="relative share">
+				</div>
+				<span class="absolute">分享<br />我们</span>
+			</div>
+			<div class="clear relative white toolbar-icon-wrap">
+				<div class="relative download">
+				</div>
+				<span class="absolute">应用<br />下载</span>
+			</div>
+			<div class="clear relative white toolbar-icon-wrap">
+				<div class="relative feedback">
+				</div>
+				<span class="absolute">问题<br />反馈</span>
+			</div>
+			<div class="clear relative white toolbar-icon-wrap hide">
+				<div class="relative go-to-top">
+				</div>
+				<span class="absolute">返回<br />顶部</span>
+			</div>
+		</div>
+		<footer class="footer data">
+			<div class="footer-wrap auto">
+				<div class="footer-company clear">
+					<h2 class="normal">合作伙伴</h2>
+					<ul>
+						<li class="left mr-12"><a href="#">i黑马</a></li>
+						<li class="left mr-12"><a href="#">创业邦</a></li>
+						<li class="left mr-12"><a href="#">网易科技</a></li>
+						<li class="left mr-12"><a href="#">36kr财新网</a></li>
+						<li class="left mr-12"><a href="#">浙江卫视</a></li>
+						<li class="left mr-12"><a href="#">上海壹周</a></li>
+						<li class="left mr-12"><a href="#">新浪网</a></li>
+						<li class="left mr-12"><a href="#">新民晚报</a></li>
+						<li class="left mr-12"><a href="#">扭秧歌杂志</a></li>
+						<li class="left mr-12"><a href="#">商界时尚</a></li>
+						<li class="left mr-12"><a href="#">人民网</a></li>  
+						<li class="left mr-12"><a href="#">人物杂志</a></li> 
+						<li class="left mr-12"><a href="#">南方日报</a></li>
+					</ul>
+				</div>
+				<div class="footer-help data clear">
+					<div class="footer-section left">
+						<h2 class="normal">关于</h2>
+						<ul>
+							<li><a href="#">了解追梦</a></li>
+							<li><a href="#">追梦历程</a></li>
+							<li><a href="#">友情链接</a></li>
+							<li><a href="#">联系我们</a></li>
+						</ul>
+					</div>
+					<div class="footer-section left">
+						<h2 class="normal">帮助</h2>
+						<ul>
+							<li><a href="#">建议反馈</a></li>
+							<li><a href="#">常见问题</a></li>
+						</ul>
+					</div>
+					<div class="footer-section left">				
+						<h2 class="normal">声明</h2>
+						<ul>
+							<li><a href="#">用户协议</a></li>
+							<li><a href="#">免责声明</a></li>
+							<li><a href="#">隐私版权声明</a></li>
+						</ul>
+					</div>
+					<div class="footer-section left">
+						<h2 class="normal">分类</h2>
+						<ul>
+							<li><a href="#">鲁菜/川菜/苏菜</a></li>
+							<li><a href="#">粤菜/闽菜/浙菜</a></li>
+							<li><a href="#">湘菜/徽菜/其他</a></li>
+						</ul>
+					</div>
+					<div class="footer-section center code left">
+						<img src="img/code.png" width="120" height="120" alt="">
+						<h2 class="normal">扫一扫加微信工作号</h2>
+					</div>
+				</div>
+			</div>
+			<div class="copyright white bg-green-light">
+				<div class="auto clear">
+					<div class="left">
+						<p>copyright © 2011~2014 ppt store all rights reserved.<br />中国信息产业部备案　京icp备11039233号-1</p>
+					</div>
+					<div class="right clear platform">
+						<div class="left relative">
+							<a href="#" class="block">
+								<div class="absolute sina"></div>
+							</a>
+						</div>
+						<div class="left relative">
+							<a href="#" class="block">
+								<div class="absolute qqzone"></div>
+							</a>
+						</div>
+						<div class="left relative douban-wrap">
+							<a href="#" class="block">
+								<div class="absolute douban"></div>
+							</a>
+						</div>
+						<div class="left relative">
+							<a href="#" class="block">
+								<div class="absolute renren"></div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<div class="login modal" id="loginmodal">
+		<div class="modal-dialog">
+			<div class="modal-header center clear bg-green-light relative">
+				<div class="close absolute" data-dismiss="modal">×</div>
+				<h4 class="modal-title white">欢迎登陆</h4>
+			</div>
+			<div class="modal-body">
+				<div class="modal-body-wrap auto">
+					<form action="?next=/accounts/profile/" method="post" id="login">
+						<div class="login-item clear login-accout">
+							<label class="left login-input-icon left" for="account">account</label>
+							<input class="input left" type="text" id="account" name="account" placeholder="请输入邮箱">
+						</div>
+						<div class="login-item clear login-password">
+							<label class="left login-input-icon left" for="password">password</label>
+							<input class="input left" type="password" name="password" id="password" placeholder="请输入密码">
+						</div>
+						<div class="login-opt title-small clear">
+							<p class="right text-right">
+								还没有帐号？立即<em><a href="/accounts/register">免费注册</a></em><br>
+								<a href="/account/password_reset" class="title-small">找回密码</a>
+							</p>
+							<input type="checkbox" name="autologin" id="autologin"><label for="autologin">自动登录</label>
+						</div>
+						<div class="clear"><button type="submit" form="login" class="white right login-submit btn normal">登&nbsp;&nbsp;录</button></div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal-backdrop"></div>
+</body>
+</html>

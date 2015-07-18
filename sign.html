@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>明食馆</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/module.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/slider.css">
+	<link rel="stylesheet" href="css/sign.css"> 
+	<link rel="stylesheet" href="css/cmxform.css">
+	<link rel="stylesheet" href="css/jquery.cropbox.css">
+	<script src="js/lib/require.js"></script>
+	<script>
+		require(['./js/common'], function (common) {
+			require(['app/sign']);
+		})
+	</script>
+</head>
+<body>
+	<header class="header center bg-red white clear relative">
+		<div class="header-notify auto">
+			<p>这里是各种弹出通知</p>
+		</div>
+		<span class="absolute modal-close">×</span>
+	</header>
+	<nav class="nav bg-green-light clear">
+		<div class="nav-wrap auto">
+			<div class="logo left bg-yellow"></div>
+			<div class="search right">
+				<form action="" class="left">
+					<div class="field clear mr-12">
+						<span class="search-icon left block"></span>
+						<input class="input-search left block" type="text" placeholder="请输入您要搜索的内容"/>
+					</div>
+				</form>
+				<div class="user left"></div>
+			</div>
+			<ul class="normal nav-link clear center">
+				<li class="left"><a class="active block white" href="#">首页</a></li>
+				<li class="left"><a class="block white" href="#">众筹项目</a></li>
+				<li class="left"><a class="block white" href="#">问答讨论</a></li>
+				<li class="left"><a class="block white" href="#">新手帮助</a></li>
+				<li class="left"><a class="block white" href="#">发起项目</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div class="wrap pt-40 bg-grey">
+		<div class="wrap-inner auto">
+			<div class="main pt-40">
+				<div class="sign-panel bg-white">
+					<div class="sign-panel-wrap">
+						<div class="sign-panel-header">
+							<ul class="medium js-sign-header clear center">
+								<li class="bg-green sign-panel-title left bg-green-light medium white"><h2>用户注册</h2></li>
+								<li class="active sign-panel-title left"><h3><a href="#" class="block">1.阅读服务条款</a></h3></li>
+								<li class="sign-panel-title left"><h3><a href="#" class="block white">2.填写基本信息</a></h3></li>
+								<li class="sign-panel-title left"><h3><a href="#" class="block white">3.完善个人信息</a></h3></li>
+								<li class="sign-panel-title left"><h3><a href="#" class="block white">4.注册成功</a></h3></li>
+							</ul>
+						</div>
+						<form method="post" id="sign" action="?next=/accounts/register" enctype="multipart/form-data">
+							<div class="js-sign-content">
+								<div class="active">
+									<div class="sign-panel-content bg-white">
+										<div class="sign-panel-content-wrap js-scroll">
+											<div class="js-scroll-wrap">
+												<h4 class="large center">用户注册协议</h4>
+												<p>
+													一、总则<br>
+													1.1 保宝网的所有权和运营权归深圳市永兴元科技有限公司所有。 <br>
+													1.2 用户在注册之前，应当仔细阅读本协议，并同意遵守本协议后方可成为注册用户。一旦注册成功，则用户与保宝网之间自动形成协议关系，用户应当受本协议的约束。用户在使用特殊的服务或产品时，应当同意接受相关协议后方能使用。<br>
+													1.3 本协议则可由保宝网随时更新，用户应当及时关注并同意本站不承担通知义务。本站的通知、公告、声明或其它类似内容是本协议的一部分
+												</p>
+												<p>
+													二、服务内容<br>
+													2.1 保宝网的具体内容由本站根据实际情况提供。 <br>
+													2.2 本站仅提供相关的网络服务，除此之外与相关网络服务有关的设备(如个人电脑、手机、及其他与接入互联网或移动网有关的装置)及所需的费用(如为接入互联网而支付的电话费及上网费、为使用移动网而支付的手机费)均应由用户自行负担。 <br>
+												</p>
+												<p>
+													三、用户帐号<br>
+													3.1 经本站注册系统完成注册程序并通过身份认证的用户即成为正式用户，可以获得本站规定用户所应享有
+												</p>
+												<p>
+													一、总则<br>
+													1.1 保宝网的所有权和运营权归深圳市永兴元科技有限公司所有。 <br>
+													1.2 用户在注册之前，应当仔细阅读本协议，并同意遵守本协议后方可成为注册用户。一旦注册成功，则用户与保宝网之间自动形成协议关系，用户应当受本协议的约束。用户在使用特殊的服务或产品时，应当同意接受相关协议后方能使用。<br>
+													1.3 本协议则可由保宝网随时更新，用户应当及时关注并同意本站不承担通知义务。本站的通知、公告、声明或其它类似内容是本协议的一部分
+												</p>
+												<p>
+													二、服务内容<br>
+													2.1 保宝网的具体内容由本站根据实际情况提供。 <br>
+													2.2 本站仅提供相关的网络服务，除此之外与相关网络服务有关的设备(如个人电脑、手机、及其他与接入互联网或移动网有关的装置)及所需的费用(如为接入互联网而支付的电话费及上网费、为使用移动网而支付的手机费)均应由用户自行负担。 <br>
+												</p>
+												<p>
+													三、用户帐号<br>
+													3.1 经本站注册系统完成注册程序并通过身份认证的用户即成为正式用户，可以获得本站规定用户所应享有
+												</p>
+											</div>
+										</div>
+										<div class="center sign-panel-agreement">
+											<p class="title-small simsun small">您必须将滚动条拉到使用条款底部才能继续下一步。</p>
+											<div>
+												<input type="checkbox" id="agreement" name="agreement" disabled="disabled">
+												<label for="agreeement" class="normal green">我已阅读并同意用户注册协议</label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div>
+									<div class="sign-panel-content bg-white">
+										<div class="basic-info-list mb-20 clear">
+											<label class="mr-12 green left" for="email">邮&nbsp;箱:</label><input type="text" id="email" name="email" class="input">
+										</div>
+										<div class="basic-info-list mb-20 clear">
+											<label class="mr-12 green left" for="password">密&nbsp;码:</label><input type="password" id="password" name="password1" class="input">
+										</div>
+										<div class="basic-info-list mb-20 clear">
+											<label class="mr-12 green left" for="repassword">重复密码:</label><input type="password" id="repassword" name="password2" class="input">
+										</div>
+										<div class="basic-info-list mb-20 clear">
+											<label class="mr-12 green left" for="nickname">昵&nbsp;称:</label><input type="text" id="nickname" name="nickname" class="input">
+										</div>
+										<div class="basic-info-list mb-20 clear">
+											<label class="mr-12 green left" for="province">籍&nbsp;贯:</label>
+											<select name="province" id="province" class="select left">
+											</select>
+											<select name="native" id="city" class="select left"></select>
+										</div>
+										<div class="basic-info-list mb-20 clear">
+											<label class="mr-12 green left" for="occupation">职&nbsp;业:</label><input type="text" id="occupation" name="occupation" class="input">
+										</div>
+									</div>
+								</div>
+								<div>
+									<div class="sign-panel-content bg-white">
+										<div class="basic-info-list mb-20 clear">
+											<label class="mr-12 green left" for="name">姓&nbsp;名:</label><input type="text" id="name" name="name" class="input">
+										</div>
+										<div class="basic-info-list mb-20 clear">
+											<label class="mr-12 green left" for="sex">性&nbsp;别:</label>
+											<select name="sex" id="sex" class="select left valid" aria-invalid="false">
+												<option value=""></option>
+												<option value="m">男</option>
+												<option value="l">女</option>
+												<option value="u">保密</option>
+											</select>
+										</div>
+										<div class="basic-info-list mb-20 clear">
+											<label class="mr-12 green left" for="age">年&nbsp;龄:</label><input type="text" id="age" name="age" class="input">
+										</div>
+										<div class="basic-info-list mb-20 clear">
+											<label class="mr-12 green left" for="phone">手机号:</label><input type="text" id="phone" name="mobile" class="input">
+										</div>
+										<div class="basic-info-list mb-20 clear">
+											<label class="mr-12 green left" for="id">身份证号:</label><input type="text" id="id" name="idcard" class="input">
+										</div>
+										<div class="basic-info-list mb-20 clear imageWrap">
+											<label class="mr-12 green left" for="image">证件照:</label>
+											<img src="img/imageholder.png" width="270" height="270" alt="">
+											<div class="imagePreview left"></div>
+											<input type="file" id="image" name="image">
+											<button class="btn bg-green-light white hide" type="button" id="imageUpload">上传</button>
+											<button class="btn bg-green-light white hide" type="button" id="imageCancel">取消</button>
+											<input type="text" id="imageId" name="idcard_image">
+										</div>
+									</div>
+								</div>
+								<div>
+									<div class="sign-panel-content bg-white">
+										<div class="success green">
+											<h3 class="large mb-26"><em>&radic;</em>注册成功！</h3>
+											<p class="mb-26">
+												请确认您的邮箱地址<br>
+												一封验证邮件已发送至下方显示的邮箱地址<br>
+												点击邮件中的链接以验证该电子邮件地址<br>
+												验证您的电子邮件地址可以确保宁在寻求客户服务支持、进行众筹<br>
+												或者完善您的帐号安全性时能联系到您
+											</p>
+											<a class="large green"></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+						<div class="sign-panel-footer">
+							<div class="sign-panel-button clear">
+								<div class="right">
+									<span class="green mr-12" id="skip">跳过</span>
+									<button type="button" class="mr-12 btn bg-green-light white" id="previous" disabled="disabled">上一步</button>
+									<button type="button" class="mr-12 btn bg-green-light white" id="next" disabled="disabled">下一步</button>
+									<button class="btn bg-green-light white" form="sign" id="submit" type="submit">提交</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="toolbar hide">
+			<div class="clear relative white toolbar-icon-wrap">
+				<div class="relative share">
+				</div>
+				<span class="absolute">分享<br />我们</span>
+			</div>
+			<div class="clear relative white toolbar-icon-wrap">
+				<div class="relative download">
+				</div>
+				<span class="absolute">应用<br />下载</span>
+			</div>
+			<div class="clear relative white toolbar-icon-wrap">
+				<div class="relative feedback">
+				</div>
+				<span class="absolute">问题<br />反馈</span>
+			</div>
+			<div class="clear relative white toolbar-icon-wrap hide">
+				<div class="relative go-to-top">
+				</div>
+				<span class="absolute">返回<br />顶部</span>
+			</div>
+		</div>
+		<footer class="footer data">
+			<div class="footer-wrap auto">
+				<div class="footer-company clear">
+					<h2 class="normal">合作伙伴</h2>
+					<ul>
+						<li class="left mr-12"><a href="#">i黑马</a></li>
+						<li class="left mr-12"><a href="#">创业邦</a></li>
+						<li class="left mr-12"><a href="#">网易科技</a></li>
+						<li class="left mr-12"><a href="#">36Kr财新网</a></li>
+						<li class="left mr-12"><a href="#">浙江卫视</a></li>
+						<li class="left mr-12"><a href="#">上海壹周</a></li>
+						<li class="left mr-12"><a href="#">新浪网</a></li>
+						<li class="left mr-12"><a href="#">新民晚报</a></li>
+						<li class="left mr-12"><a href="#">扭秧歌杂志</a></li>
+						<li class="left mr-12"><a href="#">商界时尚</a></li>
+						<li class="left mr-12"><a href="#">人民网</a></li>  
+						<li class="left mr-12"><a href="#">人物杂志</a></li> 
+						<li class="left mr-12"><a href="#">南方日报</a></li>
+					</ul>
+				</div>
+				<div class="footer-help data clear">
+					<div class="footer-section left">
+						<h2 class="normal">关于</h2>
+						<ul>
+							<li><a href="#">了解追梦</a></li>
+							<li><a href="#">追梦历程</a></li>
+							<li><a href="#">友情链接</a></li>
+							<li><a href="#">联系我们</a></li>
+						</ul>
+					</div>
+					<div class="footer-section left">
+						<h2 class="normal">帮助</h2>
+						<ul>
+							<li><a href="#">建议反馈</a></li>
+							<li><a href="#">常见问题</a></li>
+						</ul>
+					</div>
+					<div class="footer-section left">				
+						<h2 class="normal">声明</h2>
+						<ul>
+							<li><a href="#">用户协议</a></li>
+							<li><a href="#">免责声明</a></li>
+							<li><a href="#">隐私版权声明</a></li>
+						</ul>
+					</div>
+					<div class="footer-section left">
+						<h2 class="normal">分类</h2>
+						<ul>
+							<li><a href="#">鲁菜/川菜/苏菜</a></li>
+							<li><a href="#">粤菜/闽菜/浙菜</a></li>
+							<li><a href="#">湘菜/徽菜/其他</a></li>
+						</ul>
+					</div>
+					<div class="footer-section center code left">
+						<img src="img/code.png" width="120" height="120" alt="">
+						<h2 class="normal">扫一扫加微信工作号</h2>
+					</div>
+				</div>
+			</div>
+			<div class="copyright white bg-green-light">
+				<div class="auto clear">
+					<div class="left">
+						<p>COPYRIGHT © 2011~2014 PPT STORE ALL RIGHTS RESERVED.<br />中国信息产业部备案　京ICP备11039233号-1</p>
+					</div>
+					<div class="right clear platform">
+						<div class="left relative">
+							<a href="#" class="block">
+								<div class="absolute sina"></div>
+							</a>
+						</div>
+						<div class="left relative">
+							<a href="#" class="block">
+								<div class="absolute qqzone"></div>
+							</a>
+						</div>
+						<div class="left relative douban-wrap">
+							<a href="#" class="block">
+								<div class="absolute douban"></div>
+							</a>
+						</div>
+						<div class="left relative">
+							<a href="#" class="block">
+								<div class="absolute renren"></div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>

@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>明食馆</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/module.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/forum.css">
+	<script src="js/lib/require.js"></script>
+	<script>
+	require(['./js/common'], function (common) {
+		require(['app/forum']);
+	})
+	</script>
+</head>
+<body>
+	<header class="header center white alert clear relative active">
+		<div class="header-notify auto">
+			<p>这里是各种弹出通知</p>
+		</div>
+		<span class="absolute close" data-dismiss="alert">×</span>
+	</header>
+	<nav class="nav bg-green-light clear">
+		<div class="nav-wrap auto">
+			<div class="logo left"></div>
+			<div class="search right">
+				<form action="" class="left">
+					<div class="field clear mr-12">
+						<span class="search-icon left block"></span>
+						<input class="input-search left block" type="text" placeholder="请输入您要搜索的内容"/>
+					</div>
+				</form>
+				<div class="user left" data-toggle="modal" data-target="#loginModal"></div>
+			</div>
+			<ul class="normal nav-link clear center">
+				<li class="left"><a class="active block white" href="#">首页</a></li>
+				<li class="left"><a class="block white" href="#">众筹项目</a></li>
+				<li class="left"><a class="block white" href="#">问答讨论</a></li>
+				<li class="left"><a class="block white" href="#">新手帮助</a></li>
+				<li class="left"><a class="block white" href="#">发起项目</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div class="wrap pt-40 bg-grey">
+		<div class="wrap-inner auto">
+			<div class="main clear">
+				<div class="forum-aside bg-white right">
+					<div class="text">
+						<div class="forum-info mb-10">
+							<div class="section-title mb-26">
+								<div class="section-title-wrap relative title-large">
+									<h2 class="relative">版块信息</h2>
+								</div>
+							</div>
+							<p class="mb-10">管理员：</p>
+							<ul class="clear mb-10">
+								<li class="left mr-12">
+									<a href="#" class="block">
+										<div class="round-icon">
+											<div class="round-icon-wrap">
+												<div class="round"></div>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="left mr-12">
+									<a href="#" class="block">
+										<div class="round-icon">
+											<div class="round-icon-wrap">
+												<div class="round"></div>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="left mr-12">
+									<a href="#" class="block">
+										<div class="round-icon">
+											<div class="round-icon-wrap">
+												<div class="round"></div>
+											</div>
+										</div>
+									</a>
+								</li>
+							</ul>
+							<div class="forum-info-list mb-10">
+								<ul>
+									<li><a href="#">这里是版块信息这里是版块信息</a></li>
+									<li><a href="#">这里是版块信息这里是版块信息</a></li>
+									<li><a href="#">这里是版块信息这里是版块信息</a></li>
+									<li><a href="#">这里是版块信息这里是版块信息</a></li>
+								</ul>
+							</div>
+							<div>
+								<a href="#" class="block green">【用户讨论版规】</a>
+								<a href="#" class="block green">【用户须知】</a>
+								<a href="#" class="block green">【巴拉巴拉】</a>			
+							</div>
+						</div>
+						<div class="forum-recom mb-10">
+							<div class="section-title mb-26">
+								<div class="section-title-wrap relative title-large">
+									<h2 class="relative">热门标签</h2>
+								</div>
+							</div>
+							<div class="forum-info-list mb-10">
+								<ul>
+									<li><a href="#">这里是版块信息这里是版块信息</a></li>
+									<li><a href="#">这里是版块信息这里是版块信息</a></li>
+									<li><a href="#">这里是版块信息这里是版块信息</a></li>
+									<li><a href="#">这里是版块信息这里是版块信息</a></li>
+								</ul>
+							</div>
+							<div>
+								<a href="#" class="block green">【用户讨论版规】</a>
+								<a href="#" class="block green">【用户须知】</a>
+								<a href="#" class="block green">【巴拉巴拉】</a>			
+							</div>
+						</div>
+						<div class="forum-tag mb-10">
+							<div class="section-title mb-26">
+								<div class="section-title-wrap relative title-large">
+									<h2 class="relative">热门标签</h2>
+								</div>
+							</div>
+							<ul class="clear">
+								<li class="left"><a href="#" class="tag block">正宗碳锅鱼</a></li>
+								<li class="left"><a href="#" class="tag block">川菜正宗</a></li>
+								<li class="left"><a href="#" class="tag block">宫保鸡丁</a></li>
+								<li class="left"><a href="#" class="tag block">正宗碳锅鱼</a></li>
+								<li class="left"><a href="#" class="tag block">宫保鸡丁</a></li>
+								<li class="left"><a href="#" class="tag block">川菜正宗</a></li>
+								<li class="left"><a href="#" class="tag block">正宗碳锅鱼</a></li>
+								<li class="left"><a href="#" class="tag block">川菜正宗</a></li>
+								<li class="left"><a href="#" class="tag block">宫保鸡丁</a></li>
+							</ul>
+						</div>
+						<div class="forum-stat mb-10">
+							<div class="section-title mb-26">
+								<div class="section-title-wrap relative title-large">
+									<h2 class="relative">版块统计</h2>
+								</div>
+							</div>
+							<dl>
+								<dt>今日发帖:</dt>
+								<dd>2333</dd>
+								<dt>历史最高:</dt>
+								<dd>23333</dd>
+								<dt>发帖总计:</dt>
+								<dd>2333333333333</dd>
+								<dt>在线会员:</dt>
+								<dd>23</dd>
+								<dt>认证会员:</dt>
+								<dd>233</dd>
+								<dt>注册会员:</dt>
+								<dd>23333</dd>
+							</dl>
+						</div>
+					</div>
+				</div>
+				<div class="forum-main bg-white text">
+					<div class="forum-title clear">
+						<ul class="normal left center">   
+							<li class="left"><a class="block" href="#">全部</a></li>
+							<li class="left"><a class="block" href="#">最新</a></li>
+							<li class="left"><a class="block" href="#">最热</a></li>
+							<li class="left"><a class="block" href="#">推荐</a></li>
+						</ul>
+						<button type="button" class="btn bg-green-light right white" class="publish">发帖</button>
+					</div>
+					<div class="forum-hot">
+						<ul>
+							<li class="list clear">
+								<div class="left">
+									<div class="left round-icon">
+										<div class="round-icon-wrap">
+											<div class="round"></div>
+										</div>
+									</div>
+								</div>
+								<div class="right list-info title-small">
+									<p>FF团团长<br>7-7 15:08</p>
+								</div>
+								<div class="list-main">
+									<p class="normal">这是众筹啊众筹的问答讨论话题</p>
+								</div>
+							</li>
+							<li class="list clear">
+								<div class="left">
+									<div class="left round-icon">
+										<div class="round-icon-wrap">
+											<div class="round"></div>
+										</div>
+									</div>
+								</div>
+								<div class="right list-info title-small">
+									<p>FF团团长<br>7-7 15:08</p>
+								</div>
+								<div class="list-main">
+									<p class="normal">这是众筹啊众筹的问答讨论话题</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="break">
+						<p class="green">版块主题</p>
+					</div>
+					<div class="forum-list">
+						<ul>
+							<li class="list clear">
+								<div class="left">
+									<div class="left round-icon">
+										<div class="round-icon-wrap">
+											<div class="round"></div>
+										</div>
+									</div>
+								</div>
+								<div class="right list-info title-small">
+									<p>FF团团长<br>7-7 15:08</p>
+								</div>
+								<div class="list-main">
+									<p class="normal">这是众筹啊众筹的问答讨论话题</p>
+								</div>
+							</li>
+							<li class="list clear">
+								<div class="left">
+									<div class="left round-icon">
+										<div class="round-icon-wrap">
+											<div class="round"></div>
+										</div>
+									</div>
+								</div>
+								<div class="right list-info title-small">
+									<p>FF团团长<br>7-7 15:08</p>
+								</div>
+								<div class="list-main">
+									<p class="normal">这是众筹啊众筹的问答讨论话题</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="page clear">
+						<button type="button" class="btn bg-green-light right white" class="publish">发帖</button>
+						<div class="page-wrap">
+							<ul class="clear medium title-large">
+								<li class="last-page left round-icon"><div class="round-icon-wrap"><a class="title-large round" href="#">&lt;</a></div></li>
+								<li class="left round-icon"><div class="round-icon-wrap"><a class="title-large round" href="#">1</a></div></li>
+								<li class="current-page left round-icon"><div class="round-icon-wrap"><a class="title-large round" href="#">2</a></div></li>
+								<li class="left round-icon"><div class="round-icon-wrap"><a class="title-large round" href="#">3</a></div></li>
+								<li class="left round-icon"><div class="round-icon-wrap"><a class="title-large round" href="#">4</a></div></li>
+								<li class="the-last-page left round-icon"><div class="round-icon-wrap"><a class="title-large round" href="#">...233</a></div></li>
+								<li class="next-page left round-icon"><div class="round-icon-wrap"><a class="title-large round" href="#">&gt;</a></div></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="toolbar">
+			<div class="clear relative white toolbar-icon-wrap">
+				<div class="relative share">
+				</div>
+				<span class="absolute">分享<br />我们</span>
+			</div>
+			<div class="clear relative white toolbar-icon-wrap">
+				<div class="relative download">
+				</div>
+				<span class="absolute">应用<br />下载</span>
+			</div>
+			<div class="clear relative white toolbar-icon-wrap">
+				<div class="relative feedback">
+				</div>
+				<span class="absolute">问题<br />反馈</span>
+			</div>
+			<div class="clear relative white toolbar-icon-wrap hide">
+				<div class="relative go-to-top">
+				</div>
+				<span class="absolute">返回<br />顶部</span>
+			</div>
+		</div>
+		<footer class="footer data">
+			<div class="footer-wrap auto">
+				<div class="footer-company clear">
+					<h2 class="normal">合作伙伴</h2>
+					<ul>
+						<li class="left mr-12"><a href="#">i黑马</a></li>
+						<li class="left mr-12"><a href="#">创业邦</a></li>
+						<li class="left mr-12"><a href="#">网易科技</a></li>
+						<li class="left mr-12"><a href="#">36Kr财新网</a></li>
+						<li class="left mr-12"><a href="#">浙江卫视</a></li>
+						<li class="left mr-12"><a href="#">上海壹周</a></li>
+						<li class="left mr-12"><a href="#">新浪网</a></li>
+						<li class="left mr-12"><a href="#">新民晚报</a></li>
+						<li class="left mr-12"><a href="#">扭秧歌杂志</a></li>
+						<li class="left mr-12"><a href="#">商界时尚</a></li>
+						<li class="left mr-12"><a href="#">人民网</a></li>  
+						<li class="left mr-12"><a href="#">人物杂志</a></li> 
+						<li class="left mr-12"><a href="#">南方日报</a></li>
+					</ul>
+				</div>
+				<div class="footer-help data clear">
+					<div class="footer-section left">
+						<h2 class="normal">关于</h2>
+						<ul>
+							<li><a href="#">了解追梦</a></li>
+							<li><a href="#">追梦历程</a></li>
+							<li><a href="#">友情链接</a></li>
+							<li><a href="#">联系我们</a></li>
+						</ul>
+					</div>
+					<div class="footer-section left">
+						<h2 class="normal">帮助</h2>
+						<ul>
+							<li><a href="#">建议反馈</a></li>
+							<li><a href="#">常见问题</a></li>
+						</ul>
+					</div>
+					<div class="footer-section left">				
+						<h2 class="normal">声明</h2>
+						<ul>
+							<li><a href="#">用户协议</a></li>
+							<li><a href="#">免责声明</a></li>
+							<li><a href="#">隐私版权声明</a></li>
+						</ul>
+					</div>
+					<div class="footer-section left">
+						<h2 class="normal">分类</h2>
+						<ul>
+							<li><a href="#">鲁菜/川菜/苏菜</a></li>
+							<li><a href="#">粤菜/闽菜/浙菜</a></li>
+							<li><a href="#">湘菜/徽菜/其他</a></li>
+						</ul>
+					</div>
+					<div class="footer-section center code left">
+						<img src="img/code.png" width="120" height="120" alt="">
+						<h2 class="normal">扫一扫加微信工作号</h2>
+					</div>
+				</div>
+			</div>
+			<div class="copyright white bg-green-light">
+				<div class="auto clear">
+					<div class="left">
+						<p>COPYRIGHT © 2011~2014 PPT STORE ALL RIGHTS RESERVED.<br />中国信息产业部备案　京ICP备11039233号-1</p>
+					</div>
+					<div class="right clear platform">
+						<div class="left relative">
+							<a href="#" class="block">
+								<div class="absolute sina"></div>
+							</a>
+						</div>
+						<div class="left relative">
+							<a href="#" class="block">
+								<div class="absolute qqzone"></div>
+							</a>
+						</div>
+						<div class="left relative douban-wrap">
+							<a href="#" class="block">
+								<div class="absolute douban"></div>
+							</a>
+						</div>
+						<div class="left relative">
+							<a href="#" class="block">
+								<div class="absolute renren"></div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<div class="login modal" id="loginModal">
+		<div class="modal-dialog">
+			<div class="modal-header center clear bg-green-light relative">
+				<div class="close absolute" data-dismiss="modal">×</div>
+				<h4 class="modal-title white">欢迎登陆</h4>
+			</div>
+			<div class="modal-body">
+				<div class="modal-body-wrap auto">
+					<form action="?next=/accounts/profile/" method="post" id="login">
+						<div class="login-item clear login-accout">
+							<label class="left login-input-icon left" for="account">account</label>
+							<input class="input left" type="text" id="account" name="account" placeholder="请输入邮箱">
+						</div>
+						<div class="login-item clear login-password">
+							<label class="left login-input-icon left" for="password">password</label>
+							<input class="input left" type="password" name="password" id="password" placeholder="请输入密码">
+						</div>
+						<div class="login-opt title-small clear">
+							<p class="right text-right">
+								还没有帐号？立即<em><a href="/accounts/register">免费注册</a></em><br>
+								<a href="/account/password_reset" class="title-small">找回密码</a>
+							</p>
+							<input type="checkbox" name="autologin" id="autologin"><label for="autologin">自动登录</label>
+						</div>
+						<div class="clear"><button type="submit" form="login" class="white right login-submit btn normal">登&nbsp;&nbsp;录</button></div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal-backdrop"></div>
+</body>
+</html>

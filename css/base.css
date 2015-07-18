@@ -1,0 +1,261 @@
+/* css reset */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, em, img, b, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figure, figcaption, footer, header, hgroup, menu, nav, section, summary {
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+    border: 0;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    min-width: 1200px;
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font: inherit;
+    color: inherit;
+    border-width: 0;
+    outline-width: 0;
+}
+textarea {
+    resize: none;
+}
+body {
+    font-family: '微软雅黑';
+    font-size: 14px;
+    line-height: 1.4;
+    color: #444;
+}
+a {
+    color: #444;
+    text-decoration: none;
+}
+img {
+    vertical-align: bottom;
+}
+svg {
+    width: 100%;
+    height: 100%;
+
+    fill: #b5b5b6;
+}
+.position-icon svg {
+    fill: #666;
+}
+.toolbar svg {
+    fill: white;
+}
+
+/* common */
+.nav-wrap {
+    width: 1200px;
+}
+/* header */
+.header {
+    padding: 15px 0;
+}
+.header-notify {
+    right: 0;
+    width: 600px;
+}
+
+/* wrap*/
+.wrap-inner {
+    width: 980px;
+}
+/* nav */
+.nav-link .active {
+    background-color: rgba(255, 255, 255, .1);
+}
+.logo {
+    width: 202px;
+    height: 78px;
+}
+.logo svg {
+    fill: white;
+}
+.nav-link > li > a {
+    width: 120px;
+    line-height: 78px;
+}
+.search {
+    margin-top: 22px;
+    margin-left: 60px;
+}
+.user {
+    width: 22px;
+    height: 22px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    cursor: pointer;
+}
+.field {
+    border-radius: 17px;
+}
+.input-search {
+    height: 36px;
+    padding: 0;
+    line-height: 36px;
+    border-width: 0;
+    outline-width: 0;
+}
+.search-icon {
+    width: 22px;
+    height: 22px;
+    padding: 7px;
+}
+.search-icon > svg {
+    fill: white;
+}
+.user > svg {
+    fill: white;
+}
+/* footer */
+.footer {
+    margin-top: 60px;
+    background-color: #fbfbfb;
+    border-bottom: 5px solid #499674;
+}
+.footer-wrap {
+    width: 1000px;
+    padding: 40px 0 45px;
+}
+.footer-help {
+    margin-top: 30px;
+}
+.footer-company > h2 {
+    margin-bottom: 24px;
+}
+.footer-company > ul, .footer-section > ul {
+    padding-left: 30px;
+}
+.footer-section {
+    width: 20%;
+}
+.footer-section.code > h2 {
+    margin-bottom: 0;
+    font-weight: 700;
+    line-height: 50px;
+}
+.footer-section > h2 {
+    margin-bottom: 24px;
+}
+.footer-section > ul > li {
+    margin-bottom: 12px;
+}
+.copyright {
+    padding: 20px 0;
+}
+.copyright > div {
+    width: 1000px;
+}
+.platform svg {
+    fill: #64b38f;
+}
+.platform > div:hover {
+    background-color: rgba(255, 255, 255, .8);
+    transition: background-color .4s;
+}
+.sina:hover > svg {
+    transition: fill .4s;
+
+    fill: #de3301;
+}
+.qqzone:hover > svg {
+    transition: fill .4s;
+
+    fill: #ffc028;
+}
+.douban:hover > svg {
+    transition: fill .4s;
+
+    fill: #22a049;
+}
+.renren:hover > svg {
+    transition: fill .4s;
+
+    fill: #2a9cd5;
+}
+.platform > div {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    background-color: rgba(255, 255, 255, .4);
+    border-radius: 25px;
+}
+.platform > div div {
+    top: 50%;
+    left: 50%;
+    width: 36px;
+    height: 36px;
+    margin-top: -18px;
+    margin-left: -18px;
+}
+.platform .douban {
+    width: 30px;
+    height: 30px;
+    margin-top: -15px;
+    margin-left: -15px;
+}
+
+/* panel */
+.panel {   
+    position: relative;
+    background-color: #fbfbfb;
+    border-radius: 6px;
+    margin-bottom: 30px;
+}
+.panel-header {
+    font-size: 24px;
+    text-align: center; 
+    padding: 10px 15px;
+}
+.panel-body {
+    font-size: 18px;
+    position: relative;
+    padding: 15px;
+}
+.padding-footer {
+    padding: 10px 15px;
+}
+.panel .close {
+    color: #7abe9f;
+}
+
+/* tab */
+.tab-content .tab-pane {
+    display: none;
+}
+.tab-content .tab-pane.active {
+    display: block;
+}
+
+/* tag */
+.tag:before {
+    width: 14px;
+    height: 14px;
+    content: url('../img/tag.png');
+    margin-right: 5px;
+    background-size: 14px 14px;
+}
